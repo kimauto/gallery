@@ -1,2 +1,13 @@
-package com.ssg.gallery.item.service;public interface ItemService {
+package com.ssg.gallery.item.service;
+
+import com.ssg.gallery.item.dto.ItemRead;
+
+import java.util.List;
+
+public interface ItemService {
+
+    //전체 상품 목록 조회
+    List<ItemRead> findAll();
+    //상품 목록 조회(특정id)
+    List<ItemRead> findAll(List<Integer> ids);
 }
